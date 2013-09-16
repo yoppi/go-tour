@@ -12,6 +12,10 @@ func main() {
         fmt.Println(m)
 
         m["answer"] = 1
-        v, ok := m["answer"]
-        fmt.Println(v, ok)
+        if v, ok := m["answer"]; ok {
+                // v使う
+                fmt.Println(v, ok)
+        } else {
+                // ない場合の処理
+        }
 }
